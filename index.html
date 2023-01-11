@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENERATE A RANDOM PASSWORD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="contentContainer">
+        <div class="titleOne"><div id="break"></div><h1 class="titleOneChild">GENERATE A </h1></div>
+        <h1 class="titleTwo"> RANDOM PASSWORD</h1>
+        <div class="divOne"><input id="passwordLength" type="text" value="HOW MANY DIGITS?" onfocus="this.value=''">
+        <button onclick="getTwo()">Generate Password</button></div>
+        <div class="divTwo"><span id="passwordOne"></span>
+        <span id="passwordTwo"></span></div>
+        
+    </div>
+    <div id="modal">
+        <div class="modalContent">
+            <div class="modalHeader"><span onclick="closeModal()" class="close">&times;</span>
+            <h2>INPUT INVALID</h2></div>
+            <p>Input must be a number number lower than 21</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
